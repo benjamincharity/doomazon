@@ -1,0 +1,201 @@
+//
+//
+//
+// $CONFIG
+//
+//
+// @author Benjamin Charity <ben@benjamincharity.com>
+//
+// @doc
+//  Set up all configurable variables and settings here.
+//  This document should contain all logic and NO styles.
+// @end
+
+
+
+
+////////////////////////////////////////////
+//
+// Compass Defaults
+//
+////////////////////////////////////////////
+
+$default-transition-duration        : 0.2s;
+$default-transition-function        : ease-in-out;
+$default-box-shadow-color           : #000;
+$default-box-shadow-h-offset        : 0;
+$default-box-shadow-v-offset        : 0;
+$default-box-shadow-blur            : 6px;
+$default-box-shadow-spread          : 0;
+$default-border-radius              : 2px;
+
+
+
+
+
+
+////////////////////////////////////////////
+//
+// Colors
+//
+////////////////////////////////////////////
+
+// Standard colors
+$color-white                        : #fff;
+$color-light-gray                   : #ccc;
+$color-gray                         : #666;
+$color-dark-gray                    : #222;
+$color-black                        : #000;
+
+
+// Alerts
+//$color-alert                        : #bada55;
+//$color-alert_minor                  : #bada55;
+//$color-alert_mega                   : #bada55;
+//$color-alert_resolved               : #bada55;
+
+//// Copy
+$color-copy_body                    : #222;
+//$color-copy_blogPost                : #bada55;
+
+// Links
+$color-link_mainNav                 : #bada55;
+$color-link_mainNavHover            : #bada55;
+$color-link_blogFollow              : #bada55;
+$color-link_blogFollowHover         : #bada55;
+
+// Background Colors
+$color-bg_blue                      : #3498db;
+$color-bg_dirty-blue                : #5399c7;
+$color-bg_dark-blue                 : #34495e;
+$color-bg_green                     : #2ecc71;
+$color-bg_smoke                     : #ecf0f1;
+$color-teal                         : #38e5d0;
+$color-bluegreen                    : #49C8F0;
+
+$color-inline-code-bg               : rgba(white, 0.4);
+
+
+$color-blue5                        : #343838;
+$color-blue4                        : #005F6B;
+$color-blue3                        : #008C9E;
+$color-blue2                        : #00B4CC;
+$color-blue1                        : #00DFFC;
+
+
+$color-faux-border                  : rgba(#999,0.4);
+
+
+
+
+// Define reusable gradients
+//@mixin modal-bg {
+  //@include background-image(linear-gradient(
+    //rgba(71,71,70,0.98) 0%,
+    //rgba(47,47,46,0.99) 50%,
+    //rgb(31,31,31) 99%,
+    //rgb(31,31,31) 100%
+  //));
+//}
+
+
+
+
+
+////////////////////////////////////////////
+//
+// Typography
+//
+////////////////////////////////////////////
+
+// Create font-family alias'
+$oswald                             : #{'Oswald', 'Helvetica Neue', Helvetica, sans-serif};
+$sourcesans                         : #{'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif};
+$helvetica                          : #{'Helvetica Neue', Helvetica, sans-serif};
+$arial                              : #{arial, sans-serif};
+//$symbols                            : #{"link_to_symbols_family"};
+$monospaced_serif                   : #{"Courier New", Courier, FreeMono, "Nimbus Mono L", monospace};
+$monospaced_sans                    : #{"Lucida Console", Monaco, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace};
+
+// Define the site base values
+$font-base                          : #{'Helvetica Neue', Helvetica, sans-serif};
+$font-base_size                     : 16px;
+$font-base_lineHeight               : 30px; //$font-base_size * 1.5;
+//$font-navigation                    : #{'custom_name', Arial, sans-serif};
+
+// Headers
+$header-size_levelOne               : 12em;
+$header-size_levelTwo               : 8em;
+
+// Font family alias' to allow for easy theme switching
+$displayFont                        : $oswald;
+$copyFont                           : $sourcesans;
+
+
+
+////////////////////////////////////////////
+//
+// Layout
+//
+////////////////////////////////////////////
+
+$site-width                         : 100%;
+//$site-width_max                     : 2400px;
+//$site-width_min                     : 300px;
+
+
+
+
+////////////////////////////////////////////
+//
+// Grid Helpers
+//
+////////////////////////////////////////////
+
+// total width of page
+$width : $site-width;
+// number of columns
+$columns: 6;
+// margin between columns
+$col_margin: 2%;
+
+
+
+
+////////////////////////////////////////////
+//
+// Breakpoint Setup
+//
+////////////////////////////////////////////
+
+/*
+  // assume min-width (by default) if only a number
+  $breakpoint-medium-width: 500px;
+  $breakpoint-medium-width-em: 30em;
+
+  // set min-width/max-width if both values are numbers
+  $breakpoint-medium-not-wide: 500px 700px;
+
+  // set min/max of feature if there are two numbers
+  $breakpoint-medium-height: height 300px 700px;
+
+  // if one value is a string, assume a feature/value pair
+  $breakpoint-kind-of-wide: min-width 700px;
+  $breakpoint-not-too-wide: max-width 700px;
+
+  // for multidimensional lists, assume each item is a feature value pair
+  $breakpoint-wide-portrait: (max-width 700px) (orientation portrait);
+
+  // handle one-sided features (ie. monochrome)
+  $breakpoint-wide-portrait-mono: (max-width 700px) (orientation portrait) (monochrome);
+  $breakpoint-mono: monochrome;
+*/
+
+$breakpoint-only-small    : max-width 520px;
+$breakpoint-medium        : 520px;
+$breakpoint-medium-large  : 768px;
+$breakpoint-large         : 1000px;
+$breakpoint-very-large    : 1440px;
+
+$breakpoint-to-ems        : true;
+$breakpoint-hi-rez        : 2 device-pixel-ratio;

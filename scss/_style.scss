@@ -1,0 +1,43 @@
+//
+//
+//
+// $PRIMARY STYLES
+//
+//
+// @author Benjamin Charity <ben@benjamincharity.com>
+//
+// @doc
+//  __documentation__
+// @end
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: #e4e4e4;
+  color: $color-copy_body;
+  font-size: $font-base_size;
+  line-height: $font-base_lineHeight;
+}
+
+// <div> containing element
+.window {
+  background-image: url('/i/doomazon.svg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: $copyFont;
+  font-weight: 300;
+  @include rem('padding',8px);
+  padding-top: 18%;
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.container {
+  @include clear;
+}

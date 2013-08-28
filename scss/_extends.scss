@@ -1,0 +1,37 @@
+//
+//
+//
+// $EXTENDS
+//
+//
+// @author Benjamin Charity <ben@benjamincharity.com>
+//
+// @doc
+//  Global extends
+// @end
+
+
+
+[data-icon]:before {
+  content: attr(data-icon);
+  font-family: 'showcase';
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-right: .5em;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-iconafter]:after {
+  content: attr(data-iconafter);
+  font-family: 'showcase';
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: .5em;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
