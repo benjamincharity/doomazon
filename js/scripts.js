@@ -84,7 +84,7 @@ Doomazon = {
       "Meth would be a better solution.",
       "Amawon't.",
       "Holding e-commerce back since 1995.",
-      "Wut"
+      "Wut",
       "WWAD - What Wouldn't Amazon Do"
       ]
   },
