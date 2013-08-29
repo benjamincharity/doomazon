@@ -1,20 +1,4 @@
 ## Doomazon
 
-- Jekyll
-- Sass/Compass/Sass-Breakpoints
-- Modernizr
-- ZeptoJS
-
-
-### The App
-
-**Dev Start**
-
-`jekyll serve --watch`
-
-** Deploy **
-
-`s3_website push`
-
-- - -
-
+A goofy site that I made one night to let myself and other developers
+vent about how terrible Amazon Seller Central is.
