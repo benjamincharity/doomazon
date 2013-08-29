@@ -1,0 +1,425 @@
+/*
+  // assume min-width (by default) if only a number
+  $breakpoint-medium-width: 500px;
+  $breakpoint-medium-width-em: 30em;
+
+  // set min-width/max-width if both values are numbers
+  $breakpoint-medium-not-wide: 500px 700px;
+
+  // set min/max of feature if there are two numbers
+  $breakpoint-medium-height: height 300px 700px;
+
+  // if one value is a string, assume a feature/value pair
+  $breakpoint-kind-of-wide: min-width 700px;
+  $breakpoint-not-too-wide: max-width 700px;
+
+  // for multidimensional lists, assume each item is a feature value pair
+  $breakpoint-wide-portrait: (max-width 700px) (orientation portrait);
+
+  // handle one-sided features (ie. monochrome)
+  $breakpoint-wide-portrait-mono: (max-width 700px) (orientation portrait) (monochrome);
+  $breakpoint-mono: monochrome;
+*/
+/* line 17, ../scss/_reset.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 31, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 40, ../scss/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 48, ../scss/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 56, ../scss/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 71, ../scss/_reset.scss */
+a {
+  display: block;
+  text-decoration: none;
+}
+/* line 77, ../scss/_reset.scss */
+a:focus, a:hover, a:active {
+  outline: none;
+}
+
+/* line 111, ../scss/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* line 118, ../scss/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* line 127, ../scss/_reset.scss */
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+/* line 137, ../scss/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 148, ../scss/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 156, ../scss/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 165, ../scss/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 174, ../scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 182, ../scss/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 190, ../scss/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 197, ../scss/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 201, ../scss/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 217, ../scss/_reset.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 229, ../scss/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 243, ../scss/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 254, ../scss/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 269, ../scss/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 280, ../scss/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 289, ../scss/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 301, ../scss/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 315, ../scss/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 323, ../scss/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 332, ../scss/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 343, ../scss/_reset.scss */
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -webkit-box-shadow: 0 0 5px red;
+  -moz-box-shadow: 0 0 5px red;
+  -ms-box-shadow: 0 0 5px red;
+  -o-box-shadow: 0 0 5px red;
+  box-shadow: 0 0 5px red;
+}
+
+/* line 357, ../scss/_reset.scss */
+ul,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+/* math magic */
+/* create row div */
+/* create a column div */
+/* make an element span n columns */
+/* the last column in a row needs this */
+/* prepend n blank columns */
+/* append n blank columns */
+/* line 15, ../scss/_extends.scss */
+[data-icon]:before {
+  content: attr(data-icon);
+  font-family: 'showcase';
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-right: .5em;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 27, ../scss/_extends.scss */
+[data-iconafter]:after {
+  content: attr(data-iconafter);
+  font-family: 'showcase';
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: .5em;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 14, ../scss/_style.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 19, ../scss/_style.scss */
+html {
+  background-color: #111;
+  color: #222222;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* line 28, ../scss/_style.scss */
+.window {
+  background-image: url("/i/doomazon.svg");
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  box-shadow: inner 0 0 50px 40px blue;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Lekton", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  overflow: hidden;
+  padding: 8px;
+  padding: 0.5rem;
+  padding-top: 43%;
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+@media (min-width: 1000px) {
+  /* line 28, ../scss/_style.scss */
+  .window {
+    padding-top: 36%;
+  }
+}
+
+/* line 85, ../scss/_functions.scss */
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 56, ../scss/_style.scss */
+.damnTrueStatement {
+  letter-spacing: .1em;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  /* line 56, ../scss/_style.scss */
+  .damnTrueStatement {
+    width: 70%;
+  }
+}
+
+/* line 68, ../scss/_style.scss */
+.youKnowYouWantMe {
+  position: absolute;
+  bottom: -3.8em;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+/* line 75, ../scss/_style.scss */
+.youKnowYouWantMe.is_open {
+  bottom: 0;
+}
+@media (min-width: 500px) {
+  /* line 68, ../scss/_style.scss */
+  .youKnowYouWantMe {
+    bottom: -3em;
+  }
+}
+
+/* line 85, ../scss/_style.scss */
+.info {
+  color: transparent;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-image: url("/i/icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 32px;
+  opacity: .2;
+  margin: 0 auto 1em;
+  -webkit-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: all 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  width: 24px;
+}
+/* line 97, ../scss/_style.scss */
+.info:focus, .info:hover {
+  opacity: 0.5;
+}
+
+/* line 103, ../scss/_style.scss */
+.suckItAmazon {
+  text-align: center;
+}
+/* line 106, ../scss/_style.scss */
+.suckItAmazon a {
+  color: white;
+  display: inline-block;
+  opacity: 1;
+  -webkit-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+/* line 113, ../scss/_style.scss */
+.suckItAmazon a:focus, .suckItAmazon a:hover {
+  opacity: 0.7;
+}
+
+/* line 120, ../scss/_style.scss */
+small {
+  display: block;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 1em;
+}
+
+/* line 134, ../scss/_style.scss */
+.window--error {
+  background-color: #fafafa;
+  padding-top: 10%;
+}
+
+/* line 139, ../scss/_style.scss */
+.error {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+/* line 144, ../scss/_style.scss */
+.error div {
+  color: #444;
+  text-align: center;
+}
+/* line 149, ../scss/_style.scss */
+.error img {
+  border: 1px solid #ccc;
+}

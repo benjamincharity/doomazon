@@ -17,27 +17,136 @@ body {
 }
 
 html {
-  background-color: #e4e4e4;
+  background-color: #111;
   color: $color-copy_body;
   font-size: $font-base_size;
   line-height: $font-base_lineHeight;
 }
 
+
 // <div> containing element
 .window {
   background-image: url('/i/doomazon.svg');
   background-position: top center;
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  font-family: $copyFont;
-  font-weight: 300;
+  box-shadow: inner 0 0 50px 40px rgba(0,0,255,1);
+  color: rgba(white, 0.7);
+  font-family: "Lekton", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  // cut off the about section when hidden
+  overflow: hidden;
   @include rem('padding',8px);
-  padding-top: 18%;
+  padding-top: 43%;
   position: relative;
   min-height: 100%;
   -webkit-font-smoothing: subpixel-antialiased;
+
+  @include breakpoint(breakpoint-large) {
+    padding-top: 36%;
+  }
 }
+
 
 .container {
   @include clear;
+}
+
+
+.damnTrueStatement {
+  letter-spacing: .1em;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+
+  @include breakpoint(breakpoint-large) {
+    width: 70%;
+  }
+}
+
+// wrapper for about section
+.youKnowYouWantMe {
+  position: absolute;
+  bottom: -3.8em;
+  left: 0;
+  right: 0;
+  @include customTransition();
+
+  &.is_open {
+    bottom: 0;
+  }
+
+  @include breakpoint(breakpoint-medium) {
+    bottom: -3em;
+  }
+}
+
+// icon button thing
+.info {
+  @include hideText;
+  background-image: url('/i/icon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 32px;
+  opacity: .2;
+  margin: 0 auto 1em;
+  @include customTransition();
+  width: 24px;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+// wrapper for text 'made by me...'
+.suckItAmazon {
+  text-align: center;
+
+  a {
+    color: white;
+    display: inline-block;
+    opacity: 1;
+    @include customTransition(opacity);
+
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+// disclaimer for stupeddd
+small {
+  display: block;
+  @include rem('font-size',11px);
+  line-height: 1em;
+}
+
+
+
+///////////////////////////////
+//
+// Error Page
+//
+///////////////////////////////
+
+.window--error {
+  background-color: #fafafa;
+  padding-top: 10%;
+}
+
+.error {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+
+  div {
+    color: #444;
+    text-align: center;
+  }
+
+  img {
+    border: 1px solid #ccc;
+  }
 }

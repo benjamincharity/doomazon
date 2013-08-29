@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="svg2" fill="#FFFFFF">
+            <g id="user_x5F_profile">
+                <path d="M4,28 L20,28 L20,22 C20,22 20,20 18,20 L6,20 C6,20 4,20 4,22 L4,28 L4,28 Z M4,28" id="Shape"></path>
+                <path d="M12,18 C14.2091391,18 16,16.2091391 16,14 C16,11.7908609 14.2091391,10 12,10 C9.79086089,10 8,11.7908609 8,14 C8,16.2091391 9.79086089,18 12,18 Z M12,18" id="Oval"></path>
+                <path d="M18.414,0 L0,0 L0,32 L24,32 L24,5.584 L18.414,0 L18.414,0 Z M17.998,2.413 L21.586,6 L17.998,6 L17.998,2.413 L17.998,2.413 Z M2,30 L2,1.998 L16,1.998 L16,7.999 L22,7.999 L22,30 L2,30 L2,30 Z M2,30" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
