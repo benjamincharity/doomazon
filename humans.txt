@@ -2,9 +2,9 @@
 
 Designer/Developer: Benjamin Charity
 Email: ben@benjamincharity.com
-Site: ben@benjamincharity.com
+Site: http://benjamincharity.com
 Twitter: @benjamincharity
-Location: Atlanta, USA.
+Location: Atlanta, USA
 
 
 
@@ -13,4 +13,4 @@ Location: Atlanta, USA.
 Last update: 2013/07/15
 Standards: HTML5, CSS3
 Components: Modernizr, Zepto, Jekyll, Sass, Compass, Breakpoint, s3_website, DOOM Font ( http://www.dafont.com/amazdoom.font )
-Software: Vim, iTerm,
+Software: Vim, iTerm, Transmit, Amazon S3

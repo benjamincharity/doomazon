@@ -85,7 +85,10 @@ Doomazon = {
       "Amawon't.",
       "Holding e-commerce back since 1995.",
       "Wut",
-      "WWAD - What Wouldn't Amazon Do"
+      "WWAD - What Wouldn't Amazon Do",
+      "Doomazon don't care! Haters gonna hate!",
+      "One year with Amazon will take 10 years off your life.",
+      "Sorry [client], Amazon doesn't do that."
       ]
   },
 
@@ -101,9 +104,6 @@ Doomazon = {
     var entry = data[Math.floor(Math.random()*data.length)];
     var quoteContainer = $('.damnTrueStatement');
 
-    console.log(data);
-    console.log(entry);
-
     quoteContainer.html(entry);
   },
 
@@ -114,8 +114,6 @@ Doomazon = {
       return false;
     });
   }
-
-
 
 };
 
