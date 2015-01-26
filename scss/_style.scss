@@ -52,7 +52,6 @@ html {
   @include clear;
 }
 
-
 .damnTrueStatement {
   letter-spacing: .1em;
   margin: 0 auto;
@@ -66,18 +65,16 @@ html {
 
 // wrapper for about section
 .youKnowYouWantMe {
+  line-height: 1.4em;
   position: absolute;
-  bottom: -3.8em;
-  left: 0;
-  right: 0;
+  bottom: -219px;
+  left: 50%;
+  @include transform( translateX(-50%) );
   @include customTransition();
+  width: 300px;
 
   &.is_open {
     bottom: 0;
-  }
-
-  @include breakpoint(breakpoint-medium) {
-    bottom: -3em;
   }
 }
 
